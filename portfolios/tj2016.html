@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+
+    <title>图集2016</title>
+    <link rel="stylesheet" href="./css/2016.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="big-box"></div>
+        <div class="small-box">
+            <div class="img"><img src="img2016/1.jpg" alt=""></div>
+            <div class="img"><img src="img2016/2.jpg" alt=""></div>
+            <div class="img"><img src="img2016/3.jpg" alt=""></div>
+            <div class="img"><img src="img2016/4.jpg" alt=""></div>
+            <div class="img"><img src="img2016/5.jpg" alt=""></div>
+        </div>
+    </div>
+    <script>
+
+        let big_box=document.querySelector(".big-box");
+        let imgs=document.getElementsByClassName("img");
+        let timer=null;
+        let index=0;
+
+        function reset(){
+            for(let i=0;i<imgs.length;i++){
+                imgs[i].className="img";
+            }
+        }
+        function selected(){
+            reset();
+            imgs[index].className="img active";
+        }
+        function play(){
+            timer=setInterval(function(){
+                selected();
+                index++;
+                big_box.style.backgroundImage="url(img2016/"+index+".jpg)";
+                if(index==5){
+                    index=0;
+                }
+            },1500);
+        }
+        for(let i=0;i<imgs.length;i++){
+            imgs[i].onmousemove=function(){
+                big_box.style.backgroundImage="url(img2016/"+(i+1)+".jpg)";
+                reset();
+                clearInterval(timer);
+                index=i+1;
+                if(index==5){
+                    index=0;
+                }
+                play();
+            }
+        }
+        // 执行轮播
+        play();
+    </script>
+</body>
+
+</html>
