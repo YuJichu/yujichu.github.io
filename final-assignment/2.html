@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="yt">
+
+<head>
+  <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-JNRZ7FD6HJ"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-JNRZ7FD6HJ'); </script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Ta们在关注什么事件？</title>
+
+  <!-- Plugin css -->
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+
+  <!-- Icon css -->
+  <link rel="stylesheet" href="css/font-awesome.css">
+
+  <!-- Bootstrap css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- font css -->
+  <link rel="stylesheet" href="css/font.css">
+
+  <!-- Custom css -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/hero-banner.css">
+  <link rel="stylesheet" href="css/features.css">
+  <link rel="stylesheet" href="css/popular-class.css">
+  <link rel="stylesheet" href="css/physical-classroom.css">
+  <link rel="stylesheet" href="css/blog.css">
+  <link rel="stylesheet" href="css/all-in-one.css">
+  <link rel="stylesheet" href="css/client-review.css">
+  <link rel="stylesheet" href="css/newsletter.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/modal.css">
+  <link rel="stylesheet" href="css/top.css">
+
+  <!-- Animation css -->
+  <link rel="stylesheet" href="css/animate.css">
+
+
+
+
+</head>
+<style>
+    * {
+                        padding: 0;
+                        margin: 0;
+                    }
+
+                    .shell {
+                        width: 100%;
+                        position: relative;
+                        padding: 80px 0;
+                        transition: 0.3s ease 0s;
+                        background-attachment: fixed;
+                        background-size: cover;
+                    }
+
+                    .shell:before {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        background: rgba(99, 99, 99, 0.3);
+                        content: "";
+                    }
+
+                    .header {
+                        width: 100%;
+                        text-align: center;
+                        /* margin-bottom: 80px; */
+                        position: relative;
+                    }
+
+                    .title {
+                        color: #fff;
+                        font-size: 46px;
+                        font-weight: normal;
+                        margin: 0;
+                    }
+
+                    .timeline {
+                        display: flex;
+                        margin: 0 auto;
+                        flex-wrap: wrap;
+                        flex-direction: column;
+                        max-width: 700px;
+                        position: relative;
+                    }
+
+                    .content-title {
+                        font-weight: normal;
+                        font-size: 55px;
+                        margin: -5px 0 0 0;
+                        transition: 0.4s;
+                        padding: 0 5px;
+                        box-sizing: border-box;
+                        color: #fff;
+                    }
+
+                    .content-desc {
+                        margin: 0;
+                        font-size: 18px;
+                        box-sizing: border-box;
+                        color: rgba(255, 255, 255, 0.7);
+                        line-height: 25px;
+                    }
+
+                    .timeline:before {
+                        position: absolute;
+                        left: 50%;
+                        width: 2px;
+                        height: 100%;
+                        margin-left: -1px;
+                        content: "";
+                        background: rgba(255, 255, 255, 0.07);
+                    }
+
+                    .item {
+                        padding: 40px 0;
+                        opacity: 0.3;
+                        filter: blur(2px);
+                        transition: 0.5s;
+                        box-sizing: border-box;
+                        width: calc(50% - 40px);
+                        display: flex;
+                        position: relative;
+                        transform: translateY(-80px);
+                    }
+
+                    .item:before {
+                        content: attr(data-text);
+                        letter-spacing: 3px;
+                        width: 100%;
+                        position: absolute;
+                        color: rgba(255, 255, 255, 0.5);
+                        font-size: 13px;
+                        border-left: 2px solid rgba(255, 255, 255, 0.5);
+                        top: 70%;
+                        margin-top: -5px;
+                        padding-left: 15px;
+                        opacity: 0;
+                        right: calc(-100% - 56px);
+                        font: 900 20px '';
+                        letter-spacing: 5px;
+                    }
+
+                    .item:nth-child(even) {
+                        align-self: flex-end;
+                    }
+
+                    .item:nth-child(even):before {
+                        right: auto;
+                        text-align: right;
+                        left: calc(-100% - 56px);
+                        padding-left: 0;
+                        border-left: none;
+                        border-right: 2px solid rgba(255, 255, 255, 0.5);
+                        padding-right: 15px;
+                    }
+
+                    .item--active {
+                        opacity: 1;
+                        transform: translateY(0);
+                        filter: blur(0px);
+                    }
+
+                    .item--active:before {
+                        top: 50%;
+                        transition: 0.3s all 0.2s;
+                        opacity: 1;
+                    }
+
+                    .item--active .content-title {
+                        margin: -50px 0 20px 0;
+                    }
+
+                    .img {
+                        max-width: 100%;
+                        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+                    }
+
+                    .subtitle {
+                        color: rgba(255, 255, 255, 0.5);
+                        font-size: 16px;
+                        letter-spacing: 5px;
+                        margin: 10px 0 0 0;
+                        font-weight: normal;
+                    }
+
+                    .footer {
+                        padding: 95px 0;
+                        text-align: center;
+                    }
+
+                    .footer a {
+                        color: #999;
+                        display: inline-block;
+                    }
+
+                    @media only screen and (max-width: 767px) {
+                        .item {
+                            align-self: baseline !important;
+                            width: 100%;
+                            padding: 0 30px 150px 80px;
+                        }
+
+                        .item:before {
+                            left: 10px !important;
+                            padding: 0 !important;
+                            top: 50px;
+                            text-align: center !important;
+                            width: 60px;
+                            border: none !important;
+                        }
+
+                        .item:last-child {
+                            padding-bottom: 40px;
+                        }
+                    }
+
+                    @media only screen and (max-width: 767px) {
+                        .timeline:before {
+                            left: 40px;
+                        }
+                    }
+                </style>
+<body>
+
+<!-- header start -->
+
+<header class="header">
+  <nav class="navbar navbar-expand-lg p-0">
+    <div class="container">
+      <a class="navbar-brand p-0 logo" href="#" title="Ta们 在干什么？"><img src="image/logo.jpg" alt="logo"></a>
+      <i class="fa-solid fa-bars navbar-toggler shadow-none border-0 p-0" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"></i>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-lg-auto align-items-lg-center">
+          <li class="nav-item">
+            <a class="nav-link d-inline-block" aria-current="page" href="2.html" title="近期热议">近期热议</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-inline-block" href="3.html" title="聊天黑话">聊天黑话</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-inline-block" href="4.html" title="新鲜娱乐">新鲜娱乐</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-inline-block" href="5.html" title="讨论模块">讨论模块</a>
+          </li>
+        </ul>
+        <a href="1.html" class="theme-button d-lg-block d-none">返回首页</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- 嵌入3.html网页 -->
+<iframe id="myIframe" src="2-1.html" frameborder="0" scrolling="no" style="width: 100%; height: 800px;"></iframe>
+
+<script type="text/javascript">
+    const bg=document.querySelector(".bg");
+    document.addEventListener("scroll",function(){
+        const scrollY=window.scrollY;
+        if(scrollY!=0){
+            bg.style.backgroundPosition="calc(50% + "+scrollY+"px) calc(50% + "+scrollY+"px)";
+        }else{
+            bg.style.backgroundPosition="";
+
+        }
+    })
+</script>
+<script>
+  // 监听iframe发送的消息
+  window.addEventListener('message', function(event) {
+    // 确保消息来源是iframe
+    if (event.source === document.getElementById('myIframe').contentWindow) {
+      // 更新父页面的URL
+      window.location.href = event.data;
+    }
+  });
+</script>
+  <div class="shell" id="shell">
+      <div class="header">
+        <h3 class="title">近期热议时间线</h3>
+        <h3 class="subtitle">下滑查看图片及简介</h3>
+              </div>
+              <div class="timeline">
+
+                <div class="item" data-text="2024.4.4">
+                    <div class="content">
+                        <img src="image/2-2/1.png" alt="" class="img">
+                        <!--h4 class="content-title">4.4</h4-->
+                        <p class="content-desc">
+                           up主鸽潭一姐用网上热梗词结合Suno AI做出了这首歌，发表后因为实在太搞笑并词太带感在许多人心中挥之不去
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item" data-text="2024.4.28">
+                    <div class="content">
+                        <img src="image/2-2/2.png" alt="" class="img">
+                        <p class="content-desc">
+                          近日许多up主用鬼畜的3D建模与小故事的形式改造狭小的房间成功爆火
+                        </p>
+                    </div>
+                </div>
+
+                  <div class="item" data-text="2024.5.2">
+                      <div class="content">
+                          <img src="image/2-2/3.png" alt="" class="img">
+                          <p class="content-desc">
+                              网传重庆21岁小伙“胖猫”被网恋女友以恋爱之名索要五十多万，被分手后跳江，随后其女友为此被网暴，但最终证实网暴所传消息皆为谣言，女友亦是受害者。
+                          </p>
+                      </div>
+                  </div>
+
+                  <div class="item" data-text="2024.5.10">
+                      <div class="content">
+                          <img src="image/2-2/4.png" alt="" class="img">
+                          <p class="content-desc">
+                          近期综艺《歌手2024》在首场竞演中，两位外国歌手分居冠亚军，国内歌手则在之后，那英位居季军，网友纷纷心疼还不忘调侃那英：压力给到那英，谁来救救那英？更有网友戏称那英：五旬老太守国门！
+                          </p>
+                      </div>
+                  </div>
+
+                  <div class="item" data-text="2024.5.23">
+                      <div class="content">
+                          <img src="image/2-2/5.png" alt="" class="img">
+                          <p class="content-desc">
+                             近日改编自热门漫画《狐妖小红娘》的电视剧成功上线，但因角色与原著形象不贴，剧情魔改而引起争论
+                          </p>
+                      </div>
+                  </div>
+
+                  <div class="item" data-text="2024.5.26">
+                      <div class="content">
+                          <img src="image/2-2/6.png" alt="" class="img">
+                          <p class="content-desc">
+                              通过“打工人视角”爆红的网红王妈被爆出压榨公司员工
+                              </p>
+                      </div>
+                  </div>
+
+                  <div class="item" data-text="2024.5.28">
+                      <div class="content">
+                          <img src="image/2-2/7.png" alt="" class="img">
+                          <p class="content-desc">
+                          网传《歌手2024》将迎来孙楠和王力宏的双补位，两位明星的加盟引发网友热议和期待。
+                          </p>
+                      </div>
+                  </div>
+
+                  <div class="item" data-text="2024.5.28">
+                      <div class="content">
+                          <img src="image/2-2/8.png" alt="" class="img">
+                          <p class="content-desc">
+                            528中国宝宝日是一个重要的节日，专门庆祝中国宝宝的第一个生日，飞鹤在528中国宝宝日活动中，通过科普活动，着重强调了科学育儿的重要性。
+                          </p>
+                      </div>
+                  </div>
+
+                  <div class="item" data-text="2024.5.31">
+                      <div class="content">
+                          <img src="image/2-2/9.png" alt="" class="img">
+                          <p class="content-desc">
+                              央视网在5.31在5.31发布一则微博“小孩子是真正的诗人”，引发广大网友共鸣。
+                      </div>
+                  </div>
+
+                  <div class="item" data-text="2024.5.31">
+                      <div class="content">
+                          <img src="image/2-2/10.png" alt="" class="img">
+                          <p class="content-desc">
+                            袁娅维在直播比赛中的失利引起了广大网友的普遍关注和疑问，他们对于比赛结果表示不解和质疑，认为她的输掉存在一定的争议和不解之处。
+                          </p>
+                      </div>
+                  </div>
+
+              </div>
+          </div>
+
+
+          <div class="top">
+            <button class="d-flex align-items-center justify-content-center">
+              <i class="fa-solid fa-chevron-up"></i>
+            </button>
+          </div>
+
+          <!-- top button end -->
+
+          <!-- Bootstrap js -->
+          <script src="js/bootstrap.bundle.min.js"></script>
+
+          <!-- Plugins js -->
+          <script src="js/jquery.min.js"></script>
+          <script src="js/slick.min.js"></script>
+
+          <!-- Animation js -->
+          <script src="js/wow.animation.js"></script>
+          <script src="js/wow.js"></script>
+
+          <!-- Custom Js -->
+          <script src="js/custom.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+          <script>
+
+              (function ($) {
+                  $.fn.timeline = function () {
+                      var selectors = {
+                          id: $(this),
+                          item: $(this).find(".item"),
+                          activeClass: "item--active",
+                          img: ".img"
+                      };
+
+                      selectors.item.eq(0).addClass(selectors.activeClass);
+                      selectors.id.css(
+                          "background-image",
+                          "url(" +
+                          selectors.item.first()
+                              .find(selectors.img)
+                              .attr("src") +
+                          ")"
+                      );
+
+                      var itemLength = selectors.item.length;
+
+                      $(window).scroll(function () {
+                          var max, min;
+
+                          var pos = $(this).scrollTop();
+                          selectors.item.each(function (i) {
+
+                              min = $(this).offset().top-$(this).height()/2;
+                              max = $(this).height() + $(this).offset().top;
+                              var that = $(this);
+                              // 如果滚动到最后一个项目，并且超过了当前项目高度的一半，
+                              // 则将最后一个项目设置为激活状态，并设置背景图片为最后一个项目的图片
+                              if (i == itemLength - 2 && pos > min + $(this).height() / 2) {
+                                  selectors.item.removeClass(selectors.activeClass);
+                                  selectors.id.css(
+                                      "background-image",
+                                      "url(" +
+                                      selectors.item.last()
+                                          .find(selectors.img)
+                                          .attr("src") +
+                                      ")"
+                                  );
+                                  selectors.item.last().addClass(selectors.activeClass);
+                              }
+
+                              else if (pos <= max - 10 && pos >= min) {
+                                  selectors.id.css(
+                                      "background-image",
+                                      "url(" +
+                                      $(this)
+                                          .find(selectors.img)
+                                          .attr("src") +
+                                      ")"
+                                  );
+                                  selectors.item.removeClass(selectors.activeClass);
+                                  $(this).addClass(selectors.activeClass);
+                              }
+                          });
+                      });
+                  };
+              })(jQuery)
+             $("#shell").timeline();
+
+
+          </script>
+
+</body>
+
+</html>

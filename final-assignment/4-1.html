@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JNRZ7FD6HJ"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-JNRZ7FD6HJ'); </script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script type="text/javascript" src="js/js08.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ta们在关注什么事件？</title>
+
+
+    <!-- Icon css -->
+    <link rel="stylesheet" href="css/font-awesome.css">
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- font css -->
+    <link rel="stylesheet" href="css/font.css">
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+
+</head>
+<style>
+*{
+    /* 初始化 */
+    margin: 0;
+    padding: 0;
+}
+
+/* 手机设备 */
+@media (max-width: 600px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+/* 平板设备 */
+@media (min-width: 601px) and (max-width: 900px) {
+    .sidebar {
+        width: 50%;
+    }
+}
+
+/* 桌面显示器 */
+@media (min-width: 901px) {
+    .sidebar {
+        width: 25%;
+    }
+}
+
+ul a {
+        text-decoration: none }
+a:visited {
+        color: #doc7bc }
+ .fixed-list {
+         position: fixed;
+         left: 0;
+         top: 15%; /* 可以根据需要调整垂直位置 */
+         transform: translateY(-50%); /* 让列表垂直居中 */
+         padding: 20px;
+     }
+
+
+.card{
+    /* 相对定位 */
+    position: relative;
+    width: 200px;
+    height: 350px;
+    margin: 10px;
+    background-color: #777777;
+    border-radius: 20px;
+    /* 溢出隐藏 */
+    overflow: hidden;
+    /* 弹性布局 */
+    display: flex;
+    /* 元素纵向排列 */
+    flex-direction: column;
+    /* 居中 */
+    align-items: center;
+    color: #fff;
+    /* 阴影 */
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    /* 不让其被挤压 */
+    flex-shrink: 0;
+}
+.shadow{
+ margin:12px;
+ width:200px;
+ height:50px;
+ background-size: 200px;
+}
+p{
+  color: #ffffff;
+  font-size:20px;
+}
+h1{
+  color: #ffffff;
+}
+h2{
+  color: #ffffff;
+}
+.card .photo img{
+    width: 100%;
+    height: 100%;
+    /* 保持原有尺寸比例，裁切长边 */
+    object-fit: cover;
+}
+/* 默认大图 */
+.card .photo{
+    /* 绝对定位 */
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0%;
+    overflow: hidden;
+    /* 动画过渡 */
+    transition: 0.5s;
+}
+/* 鼠标移入变小图 */
+.card:hover .photo{
+    top: 30px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+}
+/* 这里加个黑色到透明的渐变背景，可以更好的看清楚名字 */
+.card .photo::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,transparent 50%,#222);
+}
+.card h1{
+    position: absolute;
+    top: 370px;
+    transition: 0.5s;
+}
+.card:hover h1{
+    top: 170px;
+}
+.card h2{
+    margin-top: 220px;
+    width: 80%;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+.card p{
+    width: 90%;
+    text-indent: 32px;
+    font-size: 10px;
+    margin-bottom: 5px;
+    line-height: 20px;
+}
+.card a{
+    font-size: 14px;
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    border: 1px solid rgba(255,255,255,0.5);
+    padding: 8px 32px;
+    border-radius: 8px;
+}
+.card a:hover{
+    color: #fff;
+    background-color: rgba(255,255,255,0.2);
+}
+
+</style>
+ <body data-bs-spy="scroll"data-bs-target=".navbar"data-bs-offset="50">
+
+   <header class="header">
+     <nav class="navbar navbar-expand-lg p-0">
+       <div class="container">
+         <a class="navbar-brand p-0 logo" href="#" title="Ta们 在干什么？"><img src="picture/logo.jpg" alt="logo"></a>
+         <i class="fa-solid fa-bars navbar-toggler shadow-none border-0 p-0" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"></i>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <ul class="navbar-nav ms-lg-auto align-items-lg-center">
+             <li class="nav-item">
+               <a class="nav-link d-inline-block" aria-current="page" href="2.html" title="近期热议">近期热议</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link d-inline-block" href="3.html" title="聊天黑话">聊天黑话</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link d-inline-block" href="4.html" title="新鲜娱乐">新鲜娱乐</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link d-inline-block" href="5.html" title="讨论模块">讨论模块</a>
+             </li>
+           </ul>
+           <a href="1.html" class="theme-button d-lg-block d-none">返回首页</a>
+         </div>
+       </div>
+     </nav>
+   </header>
+
+  <div id="section1"class="container-fluid bg-dark text-white"style="padding:100px 20px;">
+    <h1>电视剧</h1>
+    <div class="row">
+  <div class="col mb-3 mb-sm-5 container-fluid">
+    <div class="card">
+        <div class="photo"><img src="image/4-1/1.png" alt=""></div>
+        <h1>庆余年</h1>
+        <h2></h2>
+        <p>以复杂的权谋斗争与主角的成长历程为主线。少年守着心中正义，在江湖庙堂中书写人生传奇。</p>
+    </div>
+      <h4 class="shadow text-white" href="4-1-1.html">《庆余年》</h4>
+        <h6>改编自小说的穿越权谋剧</h6>
+        <a href="4-1-1.html"  class="text-secondary" ><u>点击查看详情</u></a>
+  </div>
+
+    <div class="col">
+    <div class="card">
+        <div class="photo"><img src="image/4-1/2.png" alt=""></div>
+        <h1></h1>
+        <h2>我的阿勒泰</h2>
+        <p>关于北疆风物，文学、梦想和爱情。</p>
+    </div>
+      <h4 class="shadow text-white">《我的阿勒泰》</h4>
+        <h6>改编自散文的治愈风民族剧</h6>
+          <a href="4-1-2.html"   class="text-secondary"><u>点击查看详情</u></a>
+  </div>
+
+  <div class="col">
+  <div class="card">
+      <div class="photo"><img src="image/4-1/3.png" alt=""></div>
+      <h1>与凤行</h1>
+      <h2></h2>
+      <p>陨落凡间的凤凰和世间仅存的上古神相遇，命运被一场看似不经意的交易紧紧地扭结在了一起。</p>
+  </div>
+    <h4 class="shadow text-white">《与凤行》</h4>
+      <h6>改编自小说的古装玄幻神话剧</h6>
+        <a href="4-1-3.html"   class="text-secondary"><u>点击查看详情</u></a>
+</div>
+<div class="col">
+<div class="card">
+    <div class="photo"><img src="image/4-1/4.png" alt=""></div>
+    <h1>甄嬛传</h1>
+    <h2></h2>
+    <p>不谙世事的闺阁少女成长为善于权谋的圣母皇太后的故事。回首过往，不过是一代封建王朝的悲情故梦罢了。</p>
+</div>
+  <h4 class="shadow text-white">《甄嬛传》</h4>
+    <h6>永不过时的古装宫斗长剧</h6>
+      <a href="4-1-4.html"  class="text-secondary" ><u>点击查看详情</u></a>
+</div>
+
+<div class="col">
+<div class="card">
+    <div class="photo"><img src="image/4-1/5.png" alt=""></div>
+    <h1>如懿传</h1>
+    <h2></h2>
+    <p>青梅竹马携手面对后宫专政、政治斗争的漩涡，最终扫除障碍，却也渐行渐远。</p>
+</div>
+  <h4 class="shadow text-white">《如懿传》</h4>
+    <h6>甄嬛传姊妹篇，古装宫斗剧</h6>
+      <a href="4-1-5.html"  class="text-secondary" ><u>点击查看详情</u></a>
+</div>
+
+    <h1>电影</h1>
+  <div class="col mb-3 mb-sm-5 container-fluid">
+    <div class="card">
+    <div class="photo"><img src="image/4-1/6.png" alt=""></div>
+    <h1></h1>
+    <h2>飞驰人生2</h2>
+    <p>昔日冠军车手张驰沦为落魄驾校教练，重新组建队伍，带着他鸡飞狗跳的草台班子出征比赛。</p>
+</div>
+  <h4 class="shadow text-white">《飞驰人生2》</h4>
+    <h6>爆笑赛车主题喜剧电影</h6>
+      <a href="4-1-6.html"  class="text-secondary" ><u>点击查看详情</u></a>
+</div>
+
+<div class="col">
+<div class="card">
+    <div class="photo"><img src="image/4-1/7.png" alt=""></div>
+    <h1></h1>
+    <h2>周处除三害</h2>
+    <p>罪犯以为自己生命将尽，前去自首，发现自己在通缉名单上只排第三，决定杀掉前两个借此扬名。</p>
+</div>
+  <h4 class="shadow text-white">《周处除三害》</h4>
+    <h6>刺激的悬疑动作电影</h6>
+      <a href="4-1-7.html"  class="text-secondary" ><u>点击查看详情</u></a>
+</div>
+
+<div class="col">
+<div class="card">
+    <div class="photo"><img src="image/4-1/8.png" alt=""></div>
+    <h1></h1>
+    <h2>孤注一掷</h2>
+    <p>程序员潘生和模特安娜被海外高薪招聘吸引，意外落入境外诈骗工厂的陷阱，两人想尽办法逃离的故事。</p>
+</div>
+  <h4 class="shadow text-white">《孤注一掷》</h4>
+    <h6>惊险的反诈题材电影</h6>
+      <a href="4-1-8.html"  class="text-secondary" ><u>点击查看详情</u></a>
+</div>
+
+
+  <div class="col">
+  <div class="card">
+      <div class="photo"><img src="image/4-1/9.png" alt=""></div>
+      <h1></h1>
+      <h2>热辣滚烫</h2>
+      <p>宅家多年的杜乐莹结识了拳击教练昊坤后，克服接踵而至的考验开启滚烫人生的故事。</p>
+  </div>
+    <h4 class="shadow text-white">《热辣滚烫》</h4>
+      <h6>喜剧电影</h6>
+        <a href="4-1-9.html"  class="text-secondary" ><u>点击查看详情</u></a>
+  </div>
+
+<div class="col">
+<div class="card">
+    <div class="photo"><img src="image/4-1/10.png" alt=""></div>
+    <h1>绣春刀</h1>
+    <h2></h2>
+    <p>明朝崇祯皇帝登基后，权倾天下的大太监魏忠贤被弹劾辞官，阉党覆灭。锦衣卫授命追捕阉党，几兄弟在困境中挣扎的故事。</p>
+</div>
+  <h4 class="shadow text-white">《绣春刀》</h4>
+    <h6>系列古装武侠电影</h6>
+      <a href="4-1-10.html"  class="text-secondary" ><u>点击查看详情</u></a>
+</div>
+
+    <h1>小说</h1>
+  <div class="col mb-3 mb-sm-5 container-fluid">
+    <div class="card">
+        <div class="photo"><img src="image/4-1/11.png" alt=""></div>
+        <h1>三体</h1>
+        <h2></h2>
+        <p>讲述了地球人类文明和三体文明的信息交流、生死搏杀及两个文明在宇宙中的兴衰历程。</p>
+    </div>
+      <h4 class="shadow text-white">《三体》</h4>
+        <h6>长篇科幻小说</h6>
+          <a href="4-1-11.html"  class="text-secondary" ><u>点击查看详情</u></a>
+    </div>
+
+  <div class="col">
+  <div class="card">
+      <div class="photo"><img src="image/4-1/12.png" alt=""></div>
+      <h1></h1>
+      <h2>盗墓笔记</h2>
+      <p>南派三叔所著的盗墓题材小说。讲述吴邪、张起灵、王胖子等人进入古墓探险的故事。</p>
+  </div>
+    <h4 class="shadow text-white">《盗墓笔记》</h4>
+      <h6>盗墓题材长篇小说</h6>
+        <a href="4-1-12.html"  class="text-secondary" ><u>点击查看详情</u></a>
+  </div>
+
+<div class="col">
+  <div class="card">
+      <div class="photo"><img src="image/4-1/13.png" alt=""></div>
+      <h2>全职高手</h2>
+      <p>该小说创设了电子游戏“荣耀”，讲述了被迫退役的第一高手重新组队、最终夺冠的故事。</p>
+  </div>
+    <h4 class="shadow text-white">《全职高手》</h4>
+      <h6>电子竞技题材的网络小说</h6>
+        <a href="4-1-13.html"  class="text-secondary" ><u>点击查看详情</u></a>
+  </div>
+
+<div class="col">
+  <div class="card">
+      <div class="photo"><img src="image/4-1/15.png" alt=""></div>
+      <h1>某某</h1>
+      <h2></h2>
+      <p>少年人的感情在日常中悄然萌芽。而当各种阻力将他们拆散，他们不再是兄弟、不是同学、不是爱人，兜兜转转，又成了无法宣之于口的“某某”。</p>
+  </div>
+    <h4 class="shadow text-white">《某某》</h4>
+      <h6>耽美（纯爱）校园类网络小说</h6>
+        <a href="4-1-15.html"  class="text-secondary" ><u>点击查看详情</u></a>
+  </div>
+
+<div class="col">
+  <div class="card">
+      <div class="photo"><img src="image/4-1/16.png" alt=""></div>
+      <h1></h1>
+      <h2>全球高考</h2>
+      <p>全球大型高危险性统一考试，简称全球高考。及格保命，挂科投胎。</p>
+  </div>
+    <h4 class="shadow text-white">《全球高考》</h4>
+      <h6>耽美（纯爱）无限流小说</h6>
+        <a href="4-1-16.html"  class="text-secondary" ><u>点击查看详情</u></a>
+  </div>
+
+<h1>游戏</h1>
+<div class="col mb-3 mb-sm-5 container-fluid">
+<div class="card">
+    <div class="photo"><img src="image/4-1/17.png" alt=""></div>
+    <h1></h1>
+    <h2>王者荣耀</h2>
+    <p>玩家操纵各类英雄角色，进行1V1、3V3、5V5等多种方式的PVP对战的游戏。</p>
+</div>
+  <h4 class="shadow text-white">王者荣耀</h4>
+    <h6>MOBA类对战手游</h6>
+      <a href="4-1-17.html"  class="text-secondary" ><u>点击查看详情</u></a>
+</div>
+
+<div class="col">
+<div class="card">
+  <div class="photo"><img src="image/4-1/18.png" alt=""></div>
+  <h1></h1>
+  <h2>明日方舟</h2>
+  <p>在游戏中，玩家将作为罗德岛的领导者“博士”，带领罗德岛的一众干员救助受难人群、处理矿石争端以及对抗诸如整合运动等其他势力。</p>
+</div>
+<h4 class="shadow text-white">明日方舟</h4>
+  <h6>策略向即时战略塔防游戏</h6>
+    <a href="4-1-18.html"  class="text-secondary" ><u>点击查看详情</u></a>
+</div>
+
+<div class="col">
+<div class="card">
+  <div class="photo"><img src="image/4-1/19.png" alt=""></div>
+  <h1>原神</h1>
+  <h2></h2>
+  <p>在“提瓦特大陆”的幻想世界，被神选中的人将被授予“神之眼”，导引元素之力。玩家扮演“旅行者”，邂逅性格各异、能力独特的同伴们。</p>
+</div>
+<h4 class="shadow text-white">原神</h4>
+  <h6>开放世界冒险游戏</h6>
+    <a href="4-1-19.html"  class="text-secondary" ><u>点击查看详情</u></a>
+</div>
+
+<div class="col">
+<div class="card">
+  <div class="photo"><img src="image/4-1/20.png" alt=""></div>
+  <h1></h1>
+  <h2>崩坏：星穹铁道</h2>
+  <p>游戏中，玩家将登上星穹列车，造访寓居宇宙的万象世界，携手形形色色的旅伴，解救“星核”引发的种种危机，对抗“星神”践踏文明的意图</p>
+</div>
+<h4 class="shadow text-white">崩坏：星穹铁道</h4>
+  <h6>银河冒险策略游戏</h6>
+    <a href="4-1-20.html"  class="text-secondary" ><u>点击查看详情</u></a>
+</div>
+
+<div class="col">
+<div class="card">
+  <div class="photo"><img src="image/4-1/21.png" alt=""></div>
+  <h1></h1>
+  <h2>第五人格</h2>
+  <p>一个抓四个跑的竞技游戏。以角色的纽扣眼娃娃形象为特色。</p>
+</div>
+<h4 class="shadow text-white">第五人格</h4>
+  <h6>非对称性对抗竞技类游戏</h6>
+    <a href="4-1-21.html"  class="text-secondary" ><u>点击查看详情</u></a>
+</div>
+
+</div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  </body>
+</html>
