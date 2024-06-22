@@ -1,0 +1,186 @@
+
+
+body { font-family: var(--primary-font-family); margin: 0; padding: 0;}
+
+html { scroll-behavior: smooth;}
+
+:root {
+    --primary-color: #FF9B26;
+    --secondary-color: #101828;
+    --body-color: #667085; 
+    --body-grey: #595959; 
+    --dark-color: #000000;
+    --white-color: #ffffff;
+    --h1-font: 54px;
+    --h2-font: 36px;
+    --h3-font: 36px;
+    --h4-font: 24px;
+    --h5-font: 20px;
+    --h6-font: 18px;
+    --primary-font-family: 'Poppins', sans-serif;
+    --bold-font: bold;
+    --semibold-font: 600;
+    --medium-font: 500;
+    --regular-font: 400;
+    --light-font: 300;
+    --body-line-height: 24px;
+}
+
+.container { width: 100%; max-width: 1170px; padding: 0 15px; }
+
+.theme-button { background: var(--primary-color); color: var(--white-color); padding: 15px 30px; border-radius: 80px; text-transform: capitalize;
+font-size: 16px; font-weight: var(--regular-font); display: inline-block; transition: all 0.3s; border: 1px solid transparent }
+
+.theme-button:hover { color: var(--primary-color); background-color: transparent; border: 1px solid var(--primary-color);}
+
+.padding-vertical { padding: 120px 0;}
+
+.padding-bottom { padding-bottom: 120px;}
+
+h1,
+h2,
+h3,
+h4,
+h5 { text-transform: capitalize; color: var(--secondary-color); line-height: initial;}
+
+h1 > span , h2 > span , h3 > span { color: var(--primary-color);}
+
+ul,
+ol { list-style: none; }
+
+a { text-decoration: none; color: unset; }
+
+a:hover { color: unset; }
+
+h1 { font-size: var(--h1-font); font-weight: var(--bold-font); }
+
+h2 { font-size: var(--h2-font); font-weight: var(--semibold-font); }
+
+h3 { font-size: var(--h3-font); font-weight: var(--semibold-font); }
+
+h4 { font-size: var(--h4-font); font-weight: var(--medium-font); }
+
+h5 { font-size: var(--h5-font); font-weight: var(--medium-font); }
+
+h6 { font-size: var(--h6-font); font-weight: var(--medium-font); }
+
+
+.prefix { color: var(--primary-color); font-weight: var(--semibold-font); font-family: var(--primary-font-family); font-size: 14px; padding-bottom: 10px; line-height: 20px;}
+
+p { font-size: 16px; color: var(--body-color); line-height: 26px; font-weight: var(--regular-font);}
+
+.primary-color { color: var(--primary-color); }
+
+.secondary-color { color: var(--secondary-color); }
+
+.row>* { padding-left: 15px; padding-right: 15px; }
+
+/* input area start */
+
+.main-input{
+    border-radius: 80px !important;
+    border: 1px solid #8F8F8F !important;
+    box-shadow: none !important;
+    padding: 0;
+    outline: 0;
+    margin-right: 20px;
+    padding-left: 20px;
+}
+
+.form-control::placeholder{
+    color: #8F8F8F;
+    font-weight: var(--regular-font);
+    font-size: 16px;
+}
+
+.form-control{
+    border: 0;
+}
+
+.form-control:focus {
+    color: var(--secondary-color);
+    background-color: rgb(255, 255, 255, 0.1);
+    outline: 0;
+    box-shadow: none;
+}
+
+/* input area end */
+
+
+@media (max-width:1399px) {
+
+h1 { font-size: 46px; }
+
+}
+
+@media (max-width:1199px) {
+
+h2 { font-size: 30px;}
+h3 { font-size: 30px;}
+h4 { font-size: 22px;}
+h5 { font-size: 20px;}
+h6 { font-size: 18px;}
+
+.padding-vertical { padding: 100px 0;}
+
+.padding-bottom { padding-bottom: 100px;}
+
+}
+
+@media (max-width:991px) {
+
+h1 { font-size: 38px;}
+h2 { font-size: 28px;}
+h3 { font-size: 28px;}
+h4 { font-size: 20px;}
+h5 { font-size: 18px;}
+h6 { font-size: 18px;}
+
+.padding-vertical { padding: 70px 0;}
+
+.padding-bottom { padding-bottom: 70px;}
+    
+}
+
+@media (max-width:767px) {
+
+p { font-size: 14px;}
+h1 { font-size: 30px;}
+h2 { font-size: 25px;}
+h3 { font-size: 25px;}
+h4 { font-size: 18px;}
+h5 { font-size: 16px;}
+h6 { font-size: 16px;}
+
+.theme-button { font-size: 14px; padding: 10px 20px; }
+
+.logo img { max-width: 120px;}
+
+.padding-vertical { padding: 50px 0;}
+
+.padding-bottom { padding-bottom: 50px;}
+
+.form-control::placeholder { font-size: 14px; }
+
+.main-input { margin-right: 15px;}
+
+}
+
+@media (max-width:575px) {
+
+p { font-size: 14px; line-height: 24px;}
+
+h1 { font-size: 28px;}
+h2 { font-size: 22px;}
+h3 { font-size: 22px;}
+h4 { font-size: 18px;}
+h5 { font-size: 16px;}
+h6 { font-size: 16px;}
+
+.theme-button { padding: 8px 18px; }
+
+}
+
+@media (max-width:430px) {
+
+}

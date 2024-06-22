@@ -1,0 +1,76 @@
+
+.popular-class h3 { padding: 0 0 10px 20px; }
+
+.popular-class .card { padding: 20px; background-color: var(--white-color); box-shadow: 0 2px 20px 0px rgba(16, 24, 40, 0.06); border-radius: 8px; overflow: hidden; margin: 30px 20px; }
+
+.popular-class .card:hover .card-body .title > a { color: var(--primary-color); }
+
+.popular-class .card .card-body { padding: 20px 0 0 0;}
+
+.popular-class .card .card-img-top { border-radius: 4px;}
+
+.popular-class .card-body h4 { font-weight: var(--semibold-font); display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; overflow: hidden; transition: all 0.3s ease-in; }
+
+.popular-class .card-body h4:hover { color: var(--primary-color);}
+
+.popular-class .card:hover .card-body .title a > img { opacity: 1; }
+
+.popular-class .card .card-body .title a > img { opacity: 0; transition: all 0.3s ease-in; }
+
+.popular-class .card-body > p { margin: 12px 0; display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; 
+-webkit-line-clamp: 2; }
+
+.popular-class .card-body .review { display: inline-flex; align-items: center; color: var(--primary-color); font-weight: var(--medium-font); font-size: 14px; }
+
+.popular-class .card-body .review > span { color: #969696; font-weight: var(--regular-font); } 
+
+.popular-class .card-body .tutor .name { padding-left: 10px;}
+
+.popular-class .card-body .tutor { padding-top: 18px;}
+
+.popular-class .card-body .tutor img { border-radius: 100%; }
+
+.popular-class .card-body .tutor a { font-weight: var(--semibold-font); font-size: 26px; transition: all 0.3s ease;}
+
+.popular-class .card-body .tutor .name p { font-size: 14px; line-height: 20px; font-weight: var(--medium-font);}
+
+.popular-class .card-body .tutor .name p:last-child { font-weight: var(--regular-font);}
+
+.popular-class .slick-dots { bottom: -30px; }
+
+@media (max-width:1399px) {
+
+
+}
+
+@media (max-width:1199px) {
+
+}
+
+@media (max-width:991px) {
+
+.popular-class h3 { padding: 0; }
+
+}
+
+@media (max-width:767px) {
+
+.popular-class .card-body .prefix { padding-bottom: 3px;}
+
+
+}
+
+@media (max-width:575px) {
+
+.popular-class .container { padding: 0; }
+    
+.popular-class .card-body .tutor a { font-size: 22px; }
+
+.popular-class .card { padding: 15px; }
+
+}
+
+@media (max-width:430px) {
+    
+
+}
