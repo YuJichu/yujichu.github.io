@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-JNRZ7FD6HJ"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-JNRZ7FD6HJ'); </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>标题</title>
+
+  <link rel="stylesheet" href="css/168.css">
+
+            </head>
+
+<body>
+  <script>
+    // 捕获所有链接点击事件
+    document.addEventListener('click', function(event) {
+      var target = event.target;
+      while (target != null) {
+        if (target.tagName === 'A' && target.getAttribute('href')) {
+          // 阻止默认行为
+          event.preventDefault();
+          // 使用postMessage发送消息到父页面
+          window.parent.postMessage(target.getAttribute('href'), '*');
+          break;
+        }
+        target = target.parentElement;
+      }
+    });
+  </script>
+<div class="container">
+    <div class="imgs">
+        <a href="#" class="active">
+
+            <img src="image/4/4-9.png" alt="">
+        </a>
+        <a href="#">
+            <img src="image/4/4-10.png" alt="">
+        </a>
+        <a href="#">
+            <img src="image/4/4-11.png" alt="">
+        </a>
+        <a href="#">
+            <img src="image/4/4-12.png" alt="">
+        </a>
+
+        <a href="#">
+            <img src="image/4/4-2.png" alt="">
+        </a>
+        <a href="#">
+            <img src="image/4/4-3.png" alt="">
+        </a>
+        <a href="#">
+            <img src="image/4/4-4.png" alt="">
+        </a>
+        <a href="#">
+            <img src="image/4/4-5.png" alt="">
+        </a>
+        <a href="#">
+            <img src="image/4/4-6.png" alt="">
+        </a>
+        <a href="#">
+            <img src="image/4/4-7.png" alt="">
+        </a>
+        <a href="#">
+            <img src="image/4/4-8.png" alt="">
+        </a>
+
+
+    </div>
+    <div class="shades">
+        <div class="left"></div>
+        <div class="top"></div>
+        <div class="right"></div>
+        <div class="bottom"></div>
+    </div>
+    <div class="titles">
+        </a>
+        <a href="4-1.html">
+            <div class="title">线上-电视剧</div>
+            <div class="title2">介绍近期热议/经典电视剧</div>
+        </a>
+        <a href="4-1.html">
+            <div class="title">线上-电影</div>
+            <div class="title2">介绍热门电影</div>
+        </a>
+        <a href="4-1.html">
+            <div class="title">线上-流行小说</div>
+            <div class="title2">介绍流行小说</div>
+        </a>
+        <a href="4-1.html">
+            <div class="title">线上-流行游戏</div>
+            <div class="title2">介绍热度较高的游戏app</div>
+        </a>
+
+        <a href="4-2.html" class="active">
+            <div class="title">线下-围炉煮茶</div>
+            <div class="title2">适合家长加入的休闲养生活动</div>
+        </a>
+        <a href="4-3.html">
+            <div class="title">线下-Citywalk</div>
+            <div class="title2">即“城市漫步”，一种新出行方式</div>
+        </a>
+        <a href="4-4.html">
+            <div class="title">线下-密室逃脱</div>
+            <div class="title2">真人实景逃脱游戏</div>
+        </a>
+        <a href="4-5.html">
+            <div class="title">线下-特种兵旅游</div>
+            <div class="title2">新兴高效旅游方式</div>
+        </a>
+        <a href="4-6.html">
+            <div class="title">线下-美食探店</div>
+            <div class="title2">跟着网友吃遍好店</div>
+        </a>
+        <a href="4-7.html" class="active">
+            <div class="title">线下-剧本杀</div>
+            <div class="title2">演绎式娱乐活动</div>
+        </a>
+        <a href="4-8.html">
+            <div class="title">线下-猫咖</div>
+            <div class="title2">以猫咪为主题的咖啡馆</div>
+
+    </div>
+</div>
+<script src="js/168.js"></script>
+            </body>
+
+            </html>

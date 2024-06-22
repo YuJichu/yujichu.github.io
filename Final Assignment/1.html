@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-JNRZ7FD6HJ"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-JNRZ7FD6HJ'); </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ta们在干什么？</title>
+
+
+    <!-- Plugin css -->
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+
+    <!-- Icon css -->
+    <link rel="stylesheet" href="css/font-awesome.css">
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- font css -->
+    <link rel="stylesheet" href="css/font.css">
+
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hero-banner.css">
+    <link rel="stylesheet" href="css/features.css">
+    <link rel="stylesheet" href="css/popular-class.css">
+    <link rel="stylesheet" href="css/physical-classroom.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/all-in-one.css">
+    <link rel="stylesheet" href="css/client-review.css">
+    <link rel="stylesheet" href="css/newsletter.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/top.css">
+
+    <!-- Animation css -->
+    <link rel="stylesheet" href="css/animate.css">
+
+    <script type="text/javascript" src="js/js08.js"></script>
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html {
+    overflow-x: hidden;
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+
+}
+
+section,
+#footer {
+    height: 100vh;
+    position: relative;
+    color: rgba(255, 255, 255, .8);
+    font-size: 0vh;
+    /* 设置字体 */
+    font-family: 'modern_no._20regular',serif;
+
+    /* 弹性布局 */
+    display: flex;
+    /* 水平居中 */
+    justify-content: center;
+    /* 垂直居中 */
+    align-items: center;
+}
+
+#footer {
+    background-color: #c0b5aa;
+    height: 50vh;
+    color: #fff;
+    font-size: 3vh;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%; /* 调整纵向位置 */
+  left: 50%; /* 调整横向位置 */
+  transform: translate(-50%, -50%); /* 使文本居中 */
+  color: white; /* 文字颜色 */
+  font-size: 60px; /* 字体大小 */
+}
+
+.img {
+    overflow: hidden;
+    /* 背景图片不重复 */
+    background-repeat: no-repeat;
+    /* 背景图片位置：居中 */
+    background-position: center;
+    /* 背景图片固定 */
+    background-attachment: fixed;
+    background-size: cover;
+    /* 禁止用户误选中 */
+    user-select: none;
+    position: relative;
+}
+.video {
+    overflow: hidden;
+    /* 背景图片不重复 */
+    background-repeat: no-repeat;
+    /* 背景图片位置：居中 */
+    background-position: center;
+    /* 背景图片固定 */
+    background-attachment: fixed;
+    background-size: cover;
+    /* 禁止用户误选中 */
+    user-select: none;
+    position: relative;
+    .video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    background-size: cover;
+    user-select: none;
+}
+}
+
+
+
+
+#img-two {
+    background-image: url(./img/img4.jpg);
+}
+
+.content-one {
+    background: url(./img/img1.jpg) no-repeat fixed center;
+    background-size: cover;
+}
+
+.content-two {
+    background: url(./img/img2.jpg) no-repeat fixed center;
+    background-size: cover;
+}
+
+.content-three {
+    background: url(./img/img3.jpg) no-repeat fixed center;
+    background-size: cover;
+}
+
+.content-four {
+    background: url(./img/img4.jpg) no-repeat fixed center;
+    background-size: cover;
+}
+
+.text-box {
+    width: 100%;
+    height: 50%;
+    /* 绝对定位 */
+    position: absolute;
+    bottom: 25%;
+    /* 文字居中 */
+    text-align: center;
+    background-color: rgba(0, 0, 0, .3);
+    /* 旋转中心 */
+    transform-origin: center bottom;
+    /* 扭曲斜切 */
+    transform: skew(0, -8deg);
+
+}
+
+.text-box .cnt {
+    display: inline-block;
+    text-align: right;
+    margin: 40px 0 10px;
+    width: 100%;
+    max-width: 990px;
+    transform-origin: right bottom;
+    transform: skew(0, 8deg);
+}
+
+.cnt h2 {
+    margin-top: 100px;
+    font-size: 36px;
+    font-family: 'modern_no._20regular',
+        serif;
+    text-shadow: 1px 0px 0px #323232;
+    letter-spacing: 0.3em;
+    /* 大写字母 */
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.cnt p {
+    font-size: 20px;
+    line-height: 1.7;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.cnt a.btn {
+    font-size: 90%;
+    font-family: 'modern_no._20regular',
+        serif;
+    letter-spacing: 0.3em;
+    text-shadow: 1px 0px 0px black;
+    line-height: 2.8;
+    display: inline-block;
+    background-color: #eaeaea;
+    color: #000;
+    border: 3px solid #000;
+    white-space: nowrap;
+    text-decoration: none;
+    padding: 0 20px;
+
+}
+
+</style>
+<body>
+
+  <header class="header fixed-top">
+    <nav class="navbar navbar-expand-lg p-0">
+      <div class="container">
+        <a class="navbar-brand p-0 logo" href="#" title="Ta们 在干什么？"><img src="picture/logo.jpg" alt="logo"></a>
+        <i class="fa-solid fa-bars navbar-toggler shadow-none border-0 p-0" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"></i>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-lg-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link d-inline-block" aria-current="page" href="2.html" title="近期热议">近期热议</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-inline-block" href="3.html" title="聊天黑话">聊天黑话</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-inline-block" href="4.html" title="新鲜娱乐">新鲜娱乐</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-inline-block" href="5.html" title="讨论模块">讨论模块</a>
+            </li>
+          </ul>
+          <a href="1.html" class="theme-button d-lg-block d-none">返回首页</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+    <div class="container">
+        <section id="video" class="video">
+            <video autoplay muted loop id="video" class="video">
+               <source src="./img/欢迎欢迎.mp4" type="video/mp4">
+               您的浏览器不支持 Video 标签。
+           </video>
+           <div class="overlay-text">欢迎</div>
+        </section>
+        <section class="content-one">
+            <div class="text-box">
+                <div class="cnt">
+                  <h2>近期热议</h2>
+                  <p>
+                  近期在年轻群体中讨论度较高的事件。含“热议头条”与“时间线”两部分。
+                  <br>可以以此与孩子找一些共同话题。
+                  </p>
+                  <p>
+                      <a href="2.html" class="btn">点击进入该板块</a>
+                  </p>
+              </div>
+              </div>
+            </section>
+            <section class="content-two">
+              <div class="text-box">
+                  <div class="cnt">
+                  <h2>聊天黑话</h2>
+                  <p>
+                  年轻人聊天中用到的特殊词汇、故事等。含“词汇”——名词解释，和“梗”——常用典故两部分。
+                    <br>可以了解一些日常用语，更好地理解孩子在朋友圈和聊天过程中说的话是什么意思。
+                  </p>
+                  <p>
+                      <a href="3.html" class="btn">点击进入该板块</a>
+                  </p>
+              </div>
+              </div>
+            </section><section class="content-three">
+              <div class="text-box">
+                  <div class="cnt">
+                  <h2>新鲜娱乐</h2>
+                  <p>
+            当下流行的娱乐活动。含线下活动及线上热门电影、电视剧、小说、游戏介绍。
+              <br>可以通过此板块了解热门娱乐活动并加入（线下项目有注明是否适合家长参与）
+                </p>
+                <p>
+                    <a href="4.html" class="btn">点击进入该板块</a>
+                </p>
+            </div>
+            </div>
+        </section>
+        <section class="content-four">
+            <div class="text-box">
+                <div class="cnt">
+                <h2>讨论模块</h2>
+                <p>
+                  如有页面上未介绍到的具体内容，可以在此板块发帖进行讨论。
+                </p>
+                <p>
+                    <a href="5.html" class="btn">点击进入该板块</a>
+                </p>
+            </div>
+            </div>
+        </section>
+        <section id="footer">创意交互设计与技术
+        指导教师：唐雪彤<br>
+      小组成员：<br>
+    文案组：余彤 叶展彤 高适奇<br>
+  代码组：余彤 刁品文武 李心旖 陈艺菲</section>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
