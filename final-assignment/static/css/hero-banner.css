@@ -1,0 +1,177 @@
+
+
+.custom-shape-divider-bottom-1679997055 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1679997055 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.hero-banner { padding-top: 236px; background: #FFF2E1;}
+
+.hero-banner .content .inner-box { padding-top: 105px;}
+
+.hero-banner .content { z-index: 2; }
+
+.hero-banner .content .hero-banner-btn { margin-top: 35px;}
+
+.hero-banner .content p { max-width: 523px; padding-top: 15px;}
+
+.hero-banner .play-btn i { font-size: 20px; color: var(--primary-color); padding-left: 2px;}
+
+.hero-banner .play-btn { width: 48px; height: 48px; background-color: var(--white-color); border-radius: 100%; display: inline-flex; align-items: center; justify-content: center; margin-left: 28px;}
+
+.hero-banner .calender .icon { width: 41px;  height: 41px; background-color: #23BDEE; border-radius: 10px; justify-content: center; display: inline-flex; align-items: center; }
+
+.hero-banner .calender .icon img { width: 22px; }
+
+.hero-banner .calender { border-radius: 20px; padding: 10px 20px; display: inline-flex; background-color: rgba(255, 255, 255, 0.8); backdrop-filter: blur(20px); z-index: 33; }
+
+.hero-banner .calender .title { padding-left: 16px;}
+
+.hero-banner .calender .title h5 { color: var(--body-grey); font-weight: var(--semibold-font); letter-spacing: 0.02em; padding-bottom: 8px;}
+
+.hero-banner .calender .title p { font-weight: var(--medium-font);}
+
+.hero-banner .calender.mail .icon { background-color: var(--primary-color);}
+
+.hero-banner .calender.mail .icon img { padding: 0;}
+
+.hero-banner .calender.mail .check { top: 0; right: 0;}
+
+.hero-banner .calender.mail { padding: 20px;}
+
+.hero-banner .calender.mail .title { padding-left: 16px;}
+
+.hero-banner .calender.user { padding: 20px; }
+
+.hero-banner .calender.user .icon img { width: 100%; border-radius: 100%;}
+
+.hero-banner .calender.user .icon { border-radius: 100%; width: 46px; height: 46px; background-color: transparent;}
+
+.hero-banner .calender.user .theme-button { margin-top: 10px; background-color: #D8587E; padding: 5px 30px; font-size: 18px; font-weight: var(--semibold-font);}
+
+.hero-banner .calender.user .theme-button:hover { background-color: transparent; color: #D8587E; border: 1px solid #D8587E;}
+
+.vertical-bar { width: 48px;  height: 48px; background-color: #F3627C; border-radius: 10px; display: inline-flex;}
+
+.vertical-bar img { width: 38px;}
+
+.hero-banner .assist { left: -23%; top: 39%;}
+
+.hero-banner .mail { right: -46%; bottom: 28%;}
+
+.hero-banner .user { left: -22%; bottom: 6.5%;}
+
+.hero-banner .vertical-bar { right: -14%; top: 35%;}
+
+
+@media (max-width:1599px) {
+    
+    .hero-banner .mail { right: -26%; }
+
+}
+
+@media (max-width:1399px) {
+    
+    .hero-banner .mail { right: -3%; bottom: 32%; }
+
+    .hero-banner .vertical-bar { right: -3%; top: 35%; }
+
+}
+
+@media (max-width:1199px) {
+
+    .hero-banner { padding-top: 160px; }
+
+    .hero-banner .assist { left: -5%; top: 39%; }
+
+    .hero-banner .user { left: -5%; bottom: 6.5%; }
+
+    .hero-banner .vertical-bar { right: 0%; top: 35%; }
+
+    .hero-banner .mail { right: 0%; }
+
+    .hero-banner .content .hero-banner-btn { margin-top: 20px; }
+
+    .hero-banner .content p { padding-top: 5px; }
+
+    .hero-banner .play-btn { margin-left: 20px; }
+
+}
+
+@media (max-width:991px) {
+
+    .hero-banner { padding-top: 130px; }
+
+    .hero-banner .content .inner-box { padding-top: 20px; }
+
+    .hero-banner .assist { left: 0%; top: 39%;}
+
+    .hero-banner .user { left: 0%; bottom: 6.5%; }
+    
+}
+
+@media (max-width:767px) {
+    
+.hero-banner .content .hero-banner-btn { margin-top: 10px; }
+
+}
+
+@media (max-width:575px) {
+
+.hero-banner .calender , .hero-banner .vertical-bar { display: none; }
+
+.hero-banner .image .inner-box .main-image { width: 80%;}
+
+.hero-banner .assist { left: 0%; top: 32%; }
+
+.hero-banner .calender { border-radius: 10px; padding: 10px 10px; }
+
+.hero-banner .calender .icon img { padding-left: 0px; }
+
+.hero-banner .calender .title h5 { padding-bottom: 0px; font-size: 14px; }
+
+.hero-banner .calender .title p { font-size: 12px; }
+
+.hero-banner .calender.mail { padding: 10px; }
+
+.hero-banner .calender .title { padding-left: 10px; }
+
+.hero-banner .mail { bottom: 35%; }
+
+.hero-banner .calender.mail .title { padding-left: 10px; }
+
+.hero-banner .calender.user { padding: 10px; }
+
+.hero-banner .calender.user .theme-button { margin-top: 10px; background-color: #D8587E; padding: 5px 20px; font-size: 14px; font-weight: var(--semibold-font); }
+
+.hero-banner .vertical-bar { right: 0%; top: 35%; }
+
+.vertical-bar img { width: 20px; }
+
+.vertical-bar { width: 38px; height: 38px; border-radius: 6px; }
+
+.hero-banner .calender .icon { width: 38px; height: 38px; border-radius: 6px; }
+    
+}
+
+@media (max-width:430px) {
+
+    .hero-banner .assist { left: -2%; top: 31%; }
+
+    .hero-banner .user { left: 0%; bottom: 0%; }
+
+    .hero-banner .vertical-bar { right: -2%; top: 35%; }
+
+    .hero-banner .mail { right: -2%; bottom: 31.5%; }
+
+    .hero-banner .calender.mail .check { width: 16px; }
+    
+}

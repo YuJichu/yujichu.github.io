@@ -1,0 +1,70 @@
+:root {
+    --primary-color: #FF9B26;
+    --secondary-color: #101828;
+    --body-color: #667085; 
+    --body-grey: #595959; 
+    --dark-color: #000000;
+    --white-color: #ffffff;
+    --h1-font: 54px;
+    --h2-font: 36px;
+    --h3-font: 36px;
+    --h4-font: 24px;
+    --h5-font: 20px;
+    --h6-font: 18px;
+    --primary-font-family: 'Poppins', sans-serif;
+    --bold-font: bold;
+    --semibold-font: 600;
+    --medium-font: 500;
+    --regular-font: 400;
+    --light-font: 300;
+    --body-line-height: 24px;
+}
+
+header { background-color: #FFF2E1; padding: 25px 0; position: fixed; left: 0; right: 0; top: 0; z-index: 999 ;}
+
+header .main-input { width: 248px;}
+
+header .navbar-nav .nav-link { color: var(--body-grey) ; font-size: 18px; font-weight: var(--regular-font); text-transform: capitalize; padding: 0 20px !important; }
+
+header .navbar-nav .nav-link:hover { color: var(--primary-color);}
+
+header .navbar-toggler { font-size: 28px; color: var(--secondary-color);}
+
+header .theme-button { margin-left: 50px;}
+
+
+@media (max-width:1399px) {
+    
+}
+
+@media (max-width:1199px) {
+    
+}
+
+@media (max-width:991px) {
+    
+header .navbar ul{ background-color: var(--primary-color); padding: 15px 0 15px 15px ;}
+
+header .navbar-nav .nav-link { padding: 6px 0px !important; color: var(--dark-color);}
+
+header .navbar-nav .nav-link:hover { color: var(--white-color);}
+
+header .navbar-collapse.show { left: 0;}
+    
+header .navbar-collapse { height: 186px !important; position: fixed; width: 100%; left: -100%; top: 80px; transition: all 0.2s linear; z-index: 999; }
+
+}
+
+@media (max-width:767px) {
+
+header .navbar-collapse { top: 80px; }
+
+}
+
+@media (max-width:575px) {
+    
+}
+
+@media (max-width:430px) {
+    
+}

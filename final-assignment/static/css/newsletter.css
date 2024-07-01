@@ -1,0 +1,33 @@
+
+.newsletter .main-content { max-width: 590px;}
+
+.newsletter .main-content h3 { padding-bottom: 40px;}
+
+.newsletter .theme-button { border-radius: 80px !important;}
+
+
+@media (max-width:1399px) {
+    
+}
+
+@media (max-width:1199px) {
+    
+}
+
+@media (max-width:991px) {
+
+.newsletter .main-content h3 { padding-bottom: 30px;}
+ 
+}
+
+@media (max-width:767px) {
+
+}
+
+@media (max-width:575px) {
+    
+}
+
+@media (max-width:430px) {
+    
+}
