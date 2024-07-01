@@ -1,0 +1,42 @@
+
+
+.physical-classroom .image .inner-box img { border-radius: 20px; }
+
+.physical-classroom .content .inner-box p { padding-top: 10px;}
+
+.physical-classroom .content .inner-box .theme-button { margin-top: 30px;}
+
+.physical-classroom .inner-box i { font-size: 27px; color: #23BDEE; }
+
+.play-video a { width: 60px; height: 60px; background-color: var(--white-color); border-radius: 50%; display: flex; justify-content: center; align-items: center; }
+
+
+@media (max-width:1399px) {
+    
+}
+
+@media (max-width:1199px) {
+    
+.physical-classroom .content .inner-box .theme-button { margin-top: 15px;}
+
+}
+
+@media (max-width:991px) {
+
+.physical-classroom .content .inner-box .theme-button { margin-top: 15px; padding: 10px 20px;}
+
+}
+
+@media (max-width:767px) {
+    
+.physical-classroom .content .inner-box p { font-size: 14px;}
+
+}
+
+@media (max-width:575px) {
+    
+}
+
+@media (max-width:430px) {
+    
+}

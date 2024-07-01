@@ -1,0 +1,87 @@
+/* Top-button start */
+
+.top{
+    bottom: -70px;
+    right: 30px;
+    position: fixed;
+    z-index: 5;
+    transition: all 0.3s;
+}
+
+.effect{
+    bottom: 30px;
+    right: 30px;
+    transition: all 0.3s;
+}
+
+.top i{
+    font-size: 5px;
+    color: white;
+    transition: all 0.3s;
+}
+
+.effect i{
+    font-size: 20px;
+}
+
+.top button{
+    background-color: var(--primary-color);
+    width: 0px;
+    height: 0px;
+    border-radius: 100%;
+    border: 2px solid transparent;
+    transition: all 0.2s ease-in;
+}
+
+.effect button{
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.top button:hover{
+    background: transparent;
+    border-radius: 100%;
+    border: 3px solid var(--primary-color);
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
+}
+
+.top button:hover i{
+    color: var(--primary-color);
+}
+
+/* Top-button end */
+
+@media (max-width:991px) {
+    
+    .top{
+        bottom: -70px;
+        right: 20px;
+    }
+    .effect{
+        bottom: 20px;
+        right: 20px;
+    }
+
+}
+
+@media (max-width:575px) {
+    
+    .top{
+        bottom: -70px;
+        right: 15px;
+    }
+    .effect{
+        bottom: 15px;
+        right: 15px;
+    }
+    .effect button { width: 40px; height: 40px;}
+    
+    .effect button i { font-size: 14px;}
+
+    .top button:hover { border: 2px solid var(--primary-color); }
+
+}
+
+
+
