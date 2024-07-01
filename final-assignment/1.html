@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- favicon icon -->
+  <!-- <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png"> -->
+
+  <title>Ta们在干什么？</title>
+
+  <!-- Plugin css -->
+  <link rel="stylesheet" href="static/css/slick.css">
+  <link rel="stylesheet" href="static/css/slick-theme.css">
+
+  <!-- Icon css -->
+  <link rel="stylesheet" href="static/css/font-awesome.css">
+
+  <!-- Bootstrap css -->
+  <link rel="stylesheet" href="static/css/bootstrap.min.css">
+
+  <!-- font css -->
+  <link rel="stylesheet" href="static/css/font.css">
+
+  <!-- Custom css -->
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="stylesheet" href="static/css/header.css">
+  <link rel="stylesheet" href="static/css/hero-banner.css">
+  <link rel="stylesheet" href="static/css/features.css">
+  <link rel="stylesheet" href="static/css/popular-class.css">
+  <link rel="stylesheet" href="static/css/physical-classroom.css">
+  <link rel="stylesheet" href="static/css/blog.css">
+  <link rel="stylesheet" href="static/css/all-in-one.css">
+  <link rel="stylesheet" href="static/css/client-review.css">
+  <link rel="stylesheet" href="static/css/newsletter.css">
+  <link rel="stylesheet" href="static/css/footer.css">
+  <link rel="stylesheet" href="static/css/modal.css">
+  <link rel="stylesheet" href="static/css/top.css">
+
+  <!-- Animation css -->
+  <link rel="stylesheet" href="static/css/animate.css">
+
+</head>
+
+<body>
+
+  <!-- header start -->
+
+  <header class="header">
+    <nav class="navbar navbar-expand-lg p-0">
+      <div class="container">
+        <a class="navbar-brand p-0 logo" href="#" title="Ta们 在干什么？"><img src="picture/logo.jpg" alt="logo"></a>
+        <i class="fa-solid fa-bars navbar-toggler shadow-none border-0 p-0" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"></i>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-lg-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link d-inline-block" aria-current="page" href="#Class" title="近期热议">近期热议</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-inline-block" href="#features" title="聊天黑话">聊天黑话</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-inline-block" href="#Blog" title="新鲜娱乐">新鲜娱乐</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-inline-block" href="#Contacts" title="讨论模块">讨论模块</a>
+            </li>
+          </ul>
+          <a href="#" class="theme-button d-lg-block d-none">返回首页</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- 嵌入3.html网页 -->
+  <iframe id="myIframe" src="1-1.html" frameborder="0" scrolling="no" style="width: 100%; height: 800px;"></iframe>
+
+  <script type="text/javascript">
+      const bg=document.querySelector(".bg");
+      document.addEventListener("scroll",function(){
+          const scrollY=window.scrollY;
+          if(scrollY!=0){
+              bg.style.backgroundPosition="calc(50% + "+scrollY+"px) calc(50% + "+scrollY+"px)";
+          }else{
+              bg.style.backgroundPosition="";
+
+          }
+      })
+  </script>
+  <!-- hero banner start -->
+
+  <section class="hero-banner position-relative padding-vertical pb-lg-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-7 col-lg-6 content text-lg-start text-center order-lg-1 order-2">
+          <div class="inner-box">
+            <h1 class="m-0" herf><span>网络热点</span> 事件/用语/娱乐百科</h1>
+            <p class="m-0 mx-lg-0 mx-auto">在日常沟通过程中，年轻人经常会在话语中夹杂各种各样的“梗”，这些“梗”在一定程度上建构了年轻人网络话语体系，也构成了两代人之间的“代沟”。<br>本网页对年轻群体中讨论的热点事件、流行的网络用语、线上下娱乐项目做了简单介绍，希望能帮助用户更好地理解年轻人话语，减小沟通障碍。请下滑查看详细内容</p>
+            <div class="hero-banner-btn d-flex align-items-center justify-content-lg-start justify-content-center">
+              <a href="#" class="theme-button">什么是“梗”？</a>
+              <a href="3-1-0.html" class="play-btn" data-bs-toggle="modal" data-bs-target="#heromodal" title="Click To Play"><i class="fa-solid fa-play"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-5 col-lg-6 image order-lg-2 order-1">
+          <div class="inner-box position-relative">
+            <img src="img/img0.png" class="mx-auto d-block main-image" alt="hero_banner_girl">
+            <div class="calender assist position-absolute justify-content-center align-items-center">
+              <span class="icon">
+                <img src="static/picture/calendar.svg" alt="calendar">
+              </span>
+              <div class="title d-inline-block">
+                <h5 class="m-0 secondary-color">Ta们在关注什么事件？</h5>
+                <p class="m-0">查看热门事件请前往“近期热议”板块</p>
+              </div>
+            </div>
+            <div class="calender mail position-absolute justify-content-center align-items-center">
+              <div class="inner-box d-flex align-items-center position-relative">
+                <span class="icon">
+                  <img src="static/picture/users.svg" alt="email">
+                </span>
+                <div class="title d-inline-block">
+                  <h5 class="m-0 secondary-color">Ta们在做什么娱乐？</h5>
+                  <p class="m-0">查看娱乐活动请前往“新鲜娱乐”板块</p>
+                </div>
+                <img src="static/picture/check.svg" class="position-absolute check" alt="check">
+              </div>
+            </div>
+            <div class="calender user position-absolute justify-content-center align-items-center">
+              <span class="icon">
+                <img src="static/picture/document.svg" class="p-0" alt="profile">
+              </span>
+              <div class="title d-inline-block">
+                <h5 class="m-0 secondary-color">Ta们在打什么暗号？</h5>
+                <p class="m-0">更多网络用语请前往“聊天黑话”板块</p>
+                <a href="3.html" class="theme-button">进入“聊天黑话”</a>
+              </div>
+            </div>
+            <div class="vertical-bar position-absolute justify-content-center align-items-center">
+              <img src="static/picture/vertical-bar.svg" alt="vertical-bar">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="custom-shape-divider-bottom-1679997055">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1200 120" preserveaspectratio="none">
+        <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Modal start -->
+
+  <div class="modal fade" id="heromodal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body text-end upper">
+          <button type="button" class="close-button" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="modal-body">
+          <div class="ratio ratio-16x9">
+            <iframe src="XHOmBV4js_E.html" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal end -->
+
+  <!-- physical-classroom start -->
+
+  <section id="Class" class="physical-classroom padding-bottom">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 content pt-md-0 pt-4 order-md-1 order-2">
+          <div class="inner-box text-sm-start text-center">
+            <h1>
+            <br>
+            <br>
+          </h1>
+            <h3 class="m-0 secondary-color">板块介绍： <span>近期热议</span></h3>
+            <p class="m-0">介绍近期在年轻群体中讨论度较高的事件，解释事件经过及目前存在的主要观点流派。含“热议头条”与“时间线”两部分。
+            <br>可以以此与孩子找一些共同话题。
+            </p>
+            <a href="2.html" class="theme-button">进入该板块</a>
+          </div>
+        </div>
+        <div class="col-md-6 image order-md-2 order-1">
+          <div class="inner-box position-relative d-flex align-items-center justify-content-center">
+            <img src="img/img1.jpg" class="w-100 n" alt="physical-classroom" title="Everything you can do in a physical classroom">
+              </a>
+              <h1>
+              <br>
+              <br>
+            </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- popular class start -->
+
+  <section class="popular-class padding-bottom overflow-hidden">
+    <div class="container">
+      <h1>
+      <br>
+    </h1>
+      <h3 class="m-0 text-lg-start text-center">版块介绍：<span>聊天黑话</span></h3>
+      <p class="m-0">年轻人聊天中用到的特殊词汇、故事等。含“词汇”——名词解释，和“梗”——常用典故两部分。
+        <br>可以了解一些日常用语，更好地理解孩子在朋友圈和聊天过程中说的话是什么意思。
+<br>近期浏览量较高词条举例：</p>
+      <div class="popular-class-slider">
+        <div class="main-box">
+          <div class="card theme-box-hover border-0 ">
+            <img src="image/3-1/6.jpg" class="card-img-top" alt="figma_design" title="Figma UI UX Design">
+            <div class="card-body">
+              <div class="prefix">名词解释</div>
+              <div class="title d-flex align-items-center justify-content-between">
+                <h4 class="price secondary-color m-0">漫展</h4>
+              </div>
+              <p class="card-text body-color-grey">指ACG文化相关的展会，可以粗略的理解为二次元文化交流会。</p>
+            <div class="tutor d-flex align-items-center">
+                <a href="#" class="primary-color ms-auto">查看词条</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-box">
+          <div class="card theme-box-hover border-0 ">
+            <img src="image/3-1/11.jpg" class="card-img-top" alt="learn_with_shoaib" title="learn with shoaib">
+            <div class="card-body">
+              <div class="prefix">名词解释</div>
+              <div class="title d-flex align-items-center justify-content-between">
+                <h4 class="price secondary-color m-0">MBTI16型人格测试</h4>
+              </div>
+              <p class="card-text body-color-grey">迈尔斯-布里格斯类型指标，是一种人格类型理论模型。</p>
+              <div class="tutor d-flex align-items-center">
+                <a href="3-1-11.html" class="primary-color ms-auto">查看词条</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-box">
+          <div class="card theme-box-hover border-0 ">
+            <img src="image/3-2/1-1.jpg" class="card-img-top" alt="interface" title="Building User Interface">
+            <div class="card-body">
+              <div class="prefix">梗</div>
+              <div class="title d-flex align-items-center justify-content-between">
+                <h4 class="price secondary-color m-0">缩写梗</h4>
+              </div>
+              <p class="card-text body-color-grey">一些网络常见的拼音缩写，常出现在聊天过程中、朋友圈文案或评论里。</p>
+
+              <div class="tutor d-flex align-items-center">
+                <a href="#" class="primary-color ms-auto">查看词条</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+              <div class="tutor d-flex align-items-center">
+                  <a href="3.html" class="theme-button">进入该板块</a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- popular class end -->
+
+
+  <!-- Modal start -->
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body text-end upper">
+          <button type="button" class="close-button" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="modal-body">
+          <div class="ratio ratio-16x9">
+            <iframe src="XHOmBV4js_E.html" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal end -->
+
+  <!-- physical-classroom end -->
+
+  <!-- blog start -->
+
+  <section id="Blog" class="blog">
+    <div class="container">
+      <h3 class="m-0 text-sm-start text-center">版块介绍：<span>新鲜娱乐</span></h3>
+      <p class="m-0"> 当下流行的娱乐活动。含线下活动及线上热门电影、电视剧、小说、游戏介绍。
+          <br>可以通过此板块了解热门娱乐活动并加入<br><br></p>
+          <div class="tutor d-flex align-items-center">
+              <a href="4.html" class="theme-button">进入该板块</a>
+  </div>
+<p class="m-0"> <br>近期浏览量较高词条举例：</p>
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-12  order-lg-1 order-2">
+          <div class="main-box pillers d-sm-flex align-items-center">
+            <div class="image text-sm-start text-center">
+              <img src="image/4/4-2.png" alt="three_pillars" title="Three Pillars of User Delight">
+            </div>
+            <div class="content text-sm-start text-center">
+              <div class="prefix">线下休闲娱乐</div>
+              <h6 class="m-0"><a href="4-2.html">围炉煮茶</a></h6>
+              <p class="m-0">适合家长加入的休闲养生活动。</p>
+              <div class="points d-flex flex-wrap justify-content-sm-start justify-content-center">
+                <a class="me-2 pink">近年热门</a>
+                <a class="green">适合家长参与</a>
+              </div>
+            </div>
+          </div>
+          <div class="main-box mapping d-sm-flex align-items-center">
+            <div class="image text-sm-start text-center">
+              <img src="image/4/4-5.png" alt="mapping" title="UX Mapping Methods">
+            </div>
+            <div class="content text-sm-start text-center">
+              <div class="prefix">线下出行方式</div>
+              <h6 class="m-0"><a href="#">特种兵旅游</a></h6>
+              <p class="m-0">用尽可能少的时间、费用游览尽可能多的景点的高强度旅游方式</p>
+              <div class="points d-flex flex-wrap justify-content-sm-start justify-content-center">
+                <a class="me-2 pink">当下热门</a>
+                <a  class="me-2 pink">不适合家长参与</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12  order-lg-2 order-1">
+          <div class="main-box development ">
+            <div class="image text-sm-start text-center">
+              <img src="img/img3.jpg" class="w-100" alt="agile_development" title="Agile Development Projects And Usability">
+            </div>
+            <div class="content ps-0 text-sm-start text-center">
+              <div class="prefix">线上娱乐</div>
+              <h4 class="m-0"><a href="4-1.html">热门电视剧/电影/小说/游戏</a></h4>
+              <p class="m-0">该区域介绍网络流行休闲娱乐内容，含内容简介、上线时间等</p>
+              <div class="points d-flex flex-wrap justify-content-sm-start justify-content-center">
+                <a class="me-2 green">包含内容较多</a>
+                <a class="me-2 green">无门槛在线浏览</a>
+                <a class="pink">已更新近期热门</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- blog end -->
+
+
+  <section id="Contacts" class="newsletter padding-bottom">
+    <h1>
+    <br>
+    <br>
+  </h1>
+    <div class="container">
+      <div class="main-content text-center mx-auto wow fadeInUp">
+        <h3 class="m-0">版块介绍： <span>讨论模块</span></h3>
+        <p class="m-0">如有页面上未介绍到的具体内容，可以在此板块发帖进行讨论。<br>您可以先输入想要搜索的内容，也可以直接点击按钮进入讨论区。
+        </p>
+        <div class="input-group">
+
+            <input type="text" class="form-control main-input" placeholder="输入想要搜索/讨论的内容" aria-label="Recipient's username">
+          <a href="5.html" class="theme-button">进入该板块</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- newsletter end -->
+
+  <!-- footer start -->
+
+  <footer>
+    <div class="container">
+      <div class="main-box">
+        <div class="main-content text-center mx-auto wow fadeInUp">
+          <a href="#" class="d-block logo" title="Edu Tech"><img src="picture/logo.jpg" alt="logo"></a>
+          <p class="m-0 body-color-white">
+    指导教师：唐雪彤<br>
+                文案组：余彤 叶展彤 高适奇<br>
+              代码组：余彤 刁品文武 李心旖 陈艺菲<br>
+            联系我们：tong1081@163.com<br>
+            欢迎纠错/投稿词条    </h5>
+          </p>
+        </div>
+      </div>
+      <div class="copyright wow fadeInUp">
+        <p class="m-0 text-center body-color-white">中国传媒大学《创意交互设计与技术》<a target="_blank"></a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- footer end -->
+
+  <!-- top button start -->
+
+  <div class="top">
+    <button class="d-flex align-items-center justify-content-center">
+      <i class="fa-solid fa-chevron-up"></i>
+    </button>
+  </div>
+
+  <!-- top button end -->
+
+  <!-- Bootstrap js -->
+  <script src="static/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugins js -->
+  <script src="static/js/jquery.min.js"></script>
+  <script src="static/js/slick.min.js"></script>
+
+  <!-- Animation js -->
+  <script src="static/js/wow.animation.js"></script>
+  <script src="static/js/wow.js"></script>
+
+  <!-- Custom Js -->
+  <script src="static/js/custom.js"></script>
+
+</body>
+
+</html>
